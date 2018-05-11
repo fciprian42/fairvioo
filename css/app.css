@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body
+{
+    background-color: rgb(241, 244, 246);
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
+}
+
+i
+{
+    color: #fff;
+    font-size: 14px;
+}
+
+.col-sm-6
+{
+    border-right: 1px solid #E0E1E7;
+    border-left: 1px solid #E0E1E7;
+}
+
+.avis
+{
+    padding: 3rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: -9px 9px 25px 0 #E0E1E7;
+}
+
+.title
+{
+    color: #595959;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    text-align: center;
+}
+
+.trader-img
+{
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+
+.trader-rating
+{
+    display: flex;
+    text-align: center;
+    color: #00E9A6;
+    justify-content: center;
+    align-items: center;
+}
+
+.trader-rating .star
+{
+    display: flex;
+    background-color: #00E9A6;
+    padding: 9px;
+    border-radius: 100px;
+    margin-right: 5px;
+}
+
+.letter-username
+{
+    background-color: #D8D8D8;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 100px;
+    margin-right: 5px;
+}
+
+.username
+{
+    color: #4982D6;
+    font-weight: 700;
+}
+
+.user-status
+{
+    margin-left: 5px;
+    background-color: #4DE6A3;
+    border-radius: 50px;
+    padding-left: 5px;
+    padding-right: 6px;
+    padding-top: 0px;
+    padding-bottom: 4px;
+}
+
+.date-avis
+{
+    display: flex;
+    color: #9B9B9B;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.avis-content
+{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.avis-header
+{
+    padding: 5px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating
+{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.avis-description
+{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.avis-description p
+{
+    color: #ADADAD;
+    line-height: 25px;
+    font-size: 14px;
+    text-align: justify;
+
+}
+
+.avis-description .avis-title
+{
+    color: #595959;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.avis-actions
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buying
+{
+    font-size: 12px;
+    color: #9B9B9B;
+    font-weight: bold;
+}
+
+.btn
+{
+    position: relative;
+    font-size: 12px;
+    padding: 7px 25px;
+    background: transparent;
+    border-radius: 100px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.like
+{
+    border: 1px solid #4DE6A3;
+    color: #4DE6A3;
+}
+
+.report
+{
+    border: 1px solid #E05D6A;
+    color: #E05D6A;
+}
+
+.nb-likes
+{
+    padding: 4px;
+    position: absolute;
+    right: 4px;
+    top: 3px;
+    background: #4DE6A3;
+    color: #fff;
+    border-radius: 100px;
+}
+
+.partners-mobile
+{
+    display: none;
+}
+
+.partner
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-partner
+{
+    color: #4A90E2;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+}
+
+.partner h6
+{
+    font-size: 12px;
+    color: #595959;
+    font-weight: bold;
+}
+
+.avis-description .buying
+{
+    display: none;
+}
+
+@media only screen and (max-width: 420px) {
+    .association-mobile, .trader-mobile
+    {
+        display: none;
+    }
+
+    .col-sm-6
+    {
+        border: 0;
+    }
+
+    .partners-mobile
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+        border-bottom: 1px solid #E0E1E7;
+    }
+
+    .avis
+    {
+        padding: 2rem 1rem;
+    }
+
+    .avis-header
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .letter-username
+    {
+        margin-right: 10px;
+        padding-bottom: 0;
+        padding-top: 8px;
+    }
+
+    .rates
+    {
+        margin-top: 10px;
+    }
+
+    .avis-actions
+    {
+        display: block;
+    }
+    
+    .avis-actions .buying
+    {
+        display: none;
+    }
+
+    .avis-description .buying
+    {
+        display: block;
+    }
+
+    .avis-description
+    {
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .trader-rating .star
+    {
+        padding: 6px;
+    }
+}
